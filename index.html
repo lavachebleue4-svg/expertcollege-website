@@ -21,8 +21,7 @@
       <a href="mailto:info@expertcollege.com"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>info@expertcollege.com</a>
     </div>
     <div class="tb-right">
-      <a href="https://blog.expertcollege.com/" target="_blank" rel="noopener">Blog</a> &nbsp;·&nbsp;
-      <a href="https://www.expertcollege.com/mijn-account/" target="_blank" rel="noopener"><span class="i18n-nl">Mijn account</span><span class="i18n-en">My account</span></a>
+      <a href="https://blog.expertcollege.com/" target="_blank" rel="noopener">Blog</a>
     </div>
   </div>
 </div>
@@ -33,12 +32,27 @@
     <a class="logo" href="index.html"><img src="assets/img/logo.png" alt="ExpertCollege"></a>
     <nav class="main-nav" id="main-nav">
       <a href="index.html" class="active">Home</a>
+      <div class="has-drop">
+        <button type="button" class="drop-toggle"><span class="i18n-nl">Doelgroepen</span><span class="i18n-en">Solutions</span>
+          <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="drop-menu">
+          <a href="ziekenhuizen.html"><img src="assets/img/icon-ziekenhuizen.png" alt=""><span class="i18n-nl">Ziekenhuizen</span><span class="i18n-en">Hospitals</span></a>
+          <a href="mbo-hbo.html"><img src="assets/img/icon-mbo-hbo.png" alt=""><span class="i18n-nl">Mbo &amp; hbo</span><span class="i18n-en">Vocational &amp; higher education</span></a>
+          <a href="verpleging-verzorging-en-thuiszorg.html"><img src="assets/img/icon-vvt.png" alt=""><span class="i18n-nl">Verpleging, Verzorging en Thuiszorg</span><span class="i18n-en">Nursing, Care &amp; Home Care</span></a>
+          <a href="huisartsenzorg.html"><img src="assets/img/icon-huisartsenzorg.png" alt=""><span class="i18n-nl">Huisartsenzorg</span><span class="i18n-en">General practice</span></a>
+          <a href="ambulancezorg.html"><img src="assets/img/icon-ambulancezorg.png" alt=""><span class="i18n-nl">Ambulancezorg</span><span class="i18n-en">Ambulance care</span></a>
+          <a href="medische-apparatuur.html"><img src="assets/img/icon-apparatuur.png" alt=""><span class="i18n-nl">Medische apparatuur</span><span class="i18n-en">Medical equipment</span></a>
+          <a href="https://www.enilearning.nl/" target="_blank" rel="noopener"><img src="assets/img/icon-eni.png" alt=""><span class="i18n-nl">ENI Bij- en nascholing</span><span class="i18n-en">ENI Continuing education</span></a>
+        </div>
+      </div>
       <a href="producten.html"><span class="i18n-nl">Producten</span><span class="i18n-en">Products</span></a>
       <a href="over-ons.html"><span class="i18n-nl">Over ons</span><span class="i18n-en">About us</span></a>
       <a href="contact.html">Contact</a>
-      <a href="contact.html" class="nav-cta"><span class="i18n-nl">Vraag een demo aan</span><span class="i18n-en">Request a demo</span></a>
     </nav>
-    <div style="display:flex;align-items:center;">
+    <div class="header-actions">
+      <a class="login-link" href="https://www.expertcollege.com/mijn-account/" target="_blank" rel="noopener"><span class="i18n-nl">Inloggen</span><span class="i18n-en">Log in</span></a>
+      <a class="btn btn-primary btn-sm" href="contact.html"><span class="i18n-nl">Vraag een demo aan</span><span class="i18n-en">Request a demo</span></a>
       <div class="lang-switch" role="group" aria-label="Taal / Language">
         <button type="button" data-lang="nl" class="on" aria-pressed="true">NL</button>
         <button type="button" data-lang="en" aria-pressed="false">EN</button>
@@ -51,21 +65,57 @@
 <!-- ======= Hero ======= -->
 <section class="hero">
   <div class="container">
-    <span class="eyebrow"><span class="i18n-nl">Geaccrediteerde e-learning voor de zorg</span><span class="i18n-en">Accredited e-learning for healthcare</span></span>
-    <h1><span class="i18n-nl">Schrijf je nu in voor een van onze VVO&rsquo;s</span><span class="i18n-en">Enrol now in one of our post-graduate nursing programmes</span></h1>
-    <p><span class="i18n-nl">Alle opleidingen in de acute zorg van ENI (het ExpertCollege-Nightingale Instituut) zijn geaccrediteerd.</span><span class="i18n-en">All acute care programmes offered by ENI (the ExpertCollege-Nightingale Institute) are accredited.</span></p>
-    <div class="hero-actions">
-      <a class="btn btn-teal" href="https://www.enilearning.nl/" target="_blank" rel="noopener"><span class="i18n-nl">Ga naar de site van ENI</span><span class="i18n-en">Visit the ENI website</span></a>
-      <a class="btn btn-outline" href="producten.html"><span class="i18n-nl">Bekijk onze producten</span><span class="i18n-en">Browse our products</span></a>
+    <div>
+      <span class="kicker"><span class="i18n-nl">Geaccrediteerde e-learning voor de zorg</span><span class="i18n-en">Accredited e-learning for healthcare</span></span>
+      <h1><span class="i18n-nl">Schrijf je nu in voor een van onze VVO&rsquo;s</span><span class="i18n-en">Enrol now in one of our post-graduate nursing programmes</span></h1>
+      <p class="sub"><span class="i18n-nl">Alle opleidingen in de acute zorg van ENI (het ExpertCollege-Nightingale Instituut) zijn geaccrediteerd.</span><span class="i18n-en">All acute care programmes offered by ENI (the ExpertCollege-Nightingale Institute) are accredited.</span></p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://www.enilearning.nl/" target="_blank" rel="noopener"><span class="i18n-nl">Ga naar de site van ENI</span><span class="i18n-en">Visit the ENI website</span></a>
+        <a class="btn btn-outline-navy" href="producten.html"><span class="i18n-nl">Bekijk onze producten</span><span class="i18n-en">Browse our products</span></a>
+      </div>
+      <ul class="hero-points">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.2 14.5-4.3-4.3 1.7-1.7 2.6 2.6 5.8-5.8 1.7 1.7-7.5 7.5z"/></svg><span class="i18n-nl">Geaccrediteerd (o.a. V&amp;VN, KNMG-GAIA)</span><span class="i18n-en">Accredited (incl. V&amp;VN, KNMG-GAIA)</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.2 14.5-4.3-4.3 1.7-1.7 2.6 2.6 5.8-5.8 1.7 1.7-7.5 7.5z"/></svg><span class="i18n-nl">1.000+ e-learningmodulen</span><span class="i18n-en">1,000+ e-learning modules</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.2 14.5-4.3-4.3 1.7-1.7 2.6 2.6 5.8-5.8 1.7 1.7-7.5 7.5z"/></svg><span class="i18n-nl">Werkt met elk LMS</span><span class="i18n-en">Works with every LMS</span></li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <div class="frame"><img src="assets/img/hero-home.jpg" alt="E-learning voor de zorg"></div>
+      <div class="hero-chip">
+        <div class="hc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6l-8-4zm-1.2 13.5-3.3-3.3 1.4-1.4 1.9 1.9 4.3-4.3 1.4 1.4-5.7 5.7z"/></svg></div>
+        <div><strong>600.000+</strong><span><span class="i18n-nl">certificaten uitgegeven</span><span class="i18n-en">certificates issued</span></span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ======= Audiences ======= -->
+<!-- ======= Trust strip ======= -->
+<section class="trust-strip">
+  <div class="container">
+    <p class="lead"><span class="i18n-nl">Vertrouwd door zorginstellingen en scholen in heel Nederland</span><span class="i18n-en">Trusted by healthcare institutions and schools across the Netherlands</span></p>
+    <div class="trust-grid">
+      <div class="trust-item reveal"><div class="num">175.000+</div><div class="lbl"><span class="i18n-nl">Actieve gebruikers</span><span class="i18n-en">Active users</span></div></div>
+      <div class="trust-item reveal"><div class="num">300+</div><div class="lbl"><span class="i18n-nl">Aangesloten zorginstellingen</span><span class="i18n-en">Affiliated healthcare institutions</span></div></div>
+      <div class="trust-item reveal"><div class="num">125</div><div class="lbl"><span class="i18n-nl">Scholen gebruiken onze modulen</span><span class="i18n-en">Schools use our modules</span></div></div>
+      <div class="trust-item reveal"><div class="num">600.000+</div><div class="lbl"><span class="i18n-nl">Certificaten uitgegeven</span><span class="i18n-en">Certificates issued</span></div></div>
+    </div>
+    <div class="badge-row">
+      <span class="badge">V&amp;VN</span>
+      <span class="badge">KNMG-GAIA</span>
+      <span class="badge">NAPA</span>
+      <span class="badge">NVHVV</span>
+      <span class="badge">KNOV</span>
+      <span class="badge">CADD</span>
+      <span class="badge">PE-Online</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Solutions / audiences ======= -->
 <section class="section" id="doelgroepen">
   <div class="container">
     <div class="section-head reveal">
-      <div class="accent-bar"></div>
+      <span class="kicker"><span class="i18n-nl">Doelgroepen</span><span class="i18n-en">Solutions</span></span>
       <h2><span class="i18n-nl">Voor wie is ExpertCollege?</span><span class="i18n-en">Who is ExpertCollege for?</span></h2>
       <p><span class="i18n-nl">Meer dan 1.000 e-learningmodulen en praktijkonderwijs, ontwikkeld voor en door zorgprofessionals.</span><span class="i18n-en">Over 1,000 e-learning modules and practical training, developed for and by healthcare professionals.</span></p>
     </div>
@@ -116,23 +166,27 @@
   </div>
 </section>
 
-<!-- ======= Stats ======= -->
-<section class="stats-band">
+<!-- ======= Knowledge / blog teaser ======= -->
+<section class="section alt">
   <div class="container">
-    <div class="stats-grid">
-      <div class="stat reveal"><div class="num">175.000+</div><div class="lbl"><span class="i18n-nl">Actieve gebruikers</span><span class="i18n-en">Active users</span></div></div>
-      <div class="stat reveal"><div class="num">300+</div><div class="lbl"><span class="i18n-nl">Aangesloten zorginstellingen</span><span class="i18n-en">Affiliated healthcare institutions</span></div></div>
-      <div class="stat reveal"><div class="num">125</div><div class="lbl"><span class="i18n-nl">Scholen gebruiken onze modulen</span><span class="i18n-en">Schools use our modules</span></div></div>
-      <div class="stat reveal"><div class="num">600.000+</div><div class="lbl"><span class="i18n-nl">Certificaten uitgegeven</span><span class="i18n-en">Certificates issued</span></div></div>
+    <div class="split">
+      <div class="img-side reveal"><img src="assets/img/aorta.jpg" alt="De aorta"></div>
+      <div class="reveal">
+        <span class="kicker"><span class="i18n-nl">Uit onze e-learning</span><span class="i18n-en">From our e-learning</span></span>
+        <h2><span class="i18n-nl">Kennis uit onze e-learning</span><span class="i18n-en">Knowledge from our e-learning</span></h2>
+        <p><span class="i18n-nl">De aorta of de grote lichaamsslagader is de slagader die het gehele lijf van zuurstofrijk bloed voorziet. Deze ader brengt het bloed vanaf het hart naar de verschillende doelorganen.</span><span class="i18n-en">The aorta, the body&rsquo;s main artery, supplies the entire body with oxygen-rich blood. It carries blood from the heart to the various target organs.</span></p>
+        <p><span class="i18n-nl">Op ons blog delen we regelmatig medische kennis, praktijkverhalen en nieuws over onze e-learningmodulen.</span><span class="i18n-en">On our blog we regularly share medical knowledge, stories from practice and news about our e-learning modules.</span></p>
+        <a class="btn btn-primary" href="https://blog.expertcollege.com/" target="_blank" rel="noopener"><span class="i18n-nl">Lees meer</span><span class="i18n-en">Read more</span></a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ======= Events ======= -->
-<section class="section alt" id="evenementen">
+<section class="section" id="evenementen">
   <div class="container">
     <div class="section-head reveal">
-      <div class="accent-bar"></div>
+      <span class="kicker"><span class="i18n-nl">Evenementen</span><span class="i18n-en">Events</span></span>
       <h2><span class="i18n-nl">Aankomende evenementen</span><span class="i18n-en">Upcoming events</span></h2>
       <p><span class="i18n-nl">Ontmoet ons team en ontdek onze nieuwste leeroplossingen.</span><span class="i18n-en">Meet our team and discover our latest learning solutions.</span></p>
     </div>
@@ -158,22 +212,6 @@
           <p><span class="i18n-nl">Totaalpakketten voor de opleiding Verpleegkunde in het hbo.</span><span class="i18n-en">Complete packages for higher-education nursing programmes.</span></p>
         </div>
       </a>
-    </div>
-  </div>
-</section>
-
-<!-- ======= Knowledge / blog teaser ======= -->
-<section class="section">
-  <div class="container">
-    <div class="split">
-      <div class="img-side reveal"><img src="assets/img/aorta.jpg" alt="De aorta"></div>
-      <div class="reveal">
-        <div class="accent-bar left"></div>
-        <h2><span class="i18n-nl">Kennis uit onze e-learning</span><span class="i18n-en">Knowledge from our e-learning</span></h2>
-        <p><span class="i18n-nl">De aorta of de grote lichaamsslagader is de slagader die het gehele lijf van zuurstofrijk bloed voorziet. Deze ader brengt het bloed vanaf het hart naar de verschillende doelorganen.</span><span class="i18n-en">The aorta, the body&rsquo;s main artery, supplies the entire body with oxygen-rich blood. It carries blood from the heart to the various target organs.</span></p>
-        <p><span class="i18n-nl">Op ons blog delen we regelmatig medische kennis, praktijkverhalen en nieuws over onze e-learningmodulen.</span><span class="i18n-en">On our blog we regularly share medical knowledge, stories from practice and news about our e-learning modules.</span></p>
-        <a class="btn btn-primary" href="https://blog.expertcollege.com/" target="_blank" rel="noopener"><span class="i18n-nl">Lees meer</span><span class="i18n-en">Read more</span></a>
-      </div>
     </div>
   </div>
 </section>
