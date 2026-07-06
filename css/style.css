@@ -777,6 +777,16 @@ h1, h2, h3, h4 { color: var(--navy); line-height: 1.22; font-weight: 800; letter
 .footer-logo img { height: 34px; }
 .footer-about p { font-size: 14px; line-height: 1.75; }
 
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 13px;
+  line-height: 1.55;
+}
+.footer-contact svg { color: var(--teal); flex-shrink: 0; margin-top: 4px; }
+.footer-contact strong { color: #fff; font-weight: 700; }
+
 .newsletter-form { display: flex; margin-top: 14px; }
 .newsletter-form input {
   flex: 1;

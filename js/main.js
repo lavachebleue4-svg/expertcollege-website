@@ -44,6 +44,33 @@
       });
     }
 
+    /* ---------- Count-up stats ---------- */
+    var counters = document.querySelectorAll(".trust-item .num, .stat .num");
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (counters.length && "IntersectionObserver" in window && !reduceMotion) {
+      counters.forEach(function (el) { el.setAttribute("data-target", el.textContent.trim()); });
+      var cio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          cio.unobserve(en.target);
+          var raw = en.target.getAttribute("data-target");
+          var target = parseInt(raw.replace(/[^\d]/g, ""), 10);
+          var suffix = raw.indexOf("+") !== -1 ? "+" : "";
+          if (!target) return;
+          var dur = 1600;
+          var t0 = performance.now();
+          function tick(now) {
+            var p = Math.min((now - t0) / dur, 1);
+            var eased = 1 - Math.pow(1 - p, 3);
+            en.target.textContent = Math.round(target * eased).toLocaleString("nl-NL") + (p === 1 ? suffix : "");
+            if (p < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        });
+      }, { threshold: 0.4 });
+      counters.forEach(function (el) { cio.observe(el); });
+    }
+
     /* ---------- Reveal on scroll ---------- */
     if ("IntersectionObserver" in window) {
       var io = new IntersectionObserver(function (entries) {
